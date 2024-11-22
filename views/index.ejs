@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <title>File</title> -->
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
+    <main>
+        <div class="form_div">
     <% if(locals.fileLink != null){ %>
-        <div style="margin-bottom: 1rem;">
-            Your file is uploaded
-            <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
+        <div id="lnk_parent">
+            <div class="lnk">
+                <p>To access the file, please visit:</p>
+                <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
+            </div>
         </div>
     <% } %>
-    <form action="/upload" method="post" style="display: grid; gap: .5rem; grid-template-columns: auto 1fr; max-width: 500px; margin: 0 auto;" enctype="multipart/form-data">
-        <label for="file">File:</label>
-        <input type="file" id="file" name="file" required>
-        <label for="password">password:</label>
-        <input type="password" id="password" name="password">
-        <button type="submit" style="grid-column: span 2;">Share</button>
+    <form class="frm" action="/upload" method="post"  enctype="multipart/form-data">
+      <div class="frmd">
+        <div class="in_file custom-file-upload">
+            <label for="file" class="custom-button file-name"></label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        <div class="pas_div">
+            <!-- <label for="password">password:</label> -->
+            <input type="password" id="password" name="password" placeholder="password">
+        </div>
+        <button type="submit" class="btn" >Share</button>
+      </div>
     </form>
+    </div>
+    </main>
 </body>
 </html>
