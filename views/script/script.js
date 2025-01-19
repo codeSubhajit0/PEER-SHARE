@@ -83,10 +83,10 @@ window.onload = function(){
 
 document.querySelector('.ham-login').addEventListener('click' , function (e) {
   e.preventDefault;
-  window.open("/index" , "_self");
+  window.open("https://peer-chat-xbeu.onrender.com" , "_self");
 })
 
 document.querySelector('.ham-sigin').addEventListener('click', function(e) {
   e.preventDefault;
-  window.open("https://peer-chat-xbeu.onrender.com" , "_self");
+  window.open("/index" , "_self");
 });
