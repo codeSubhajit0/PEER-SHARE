@@ -83,10 +83,10 @@ window.onload = function(){
 
 document.querySelector('.ham-login').addEventListener('click' , function (e) {
   e.preventDefault;
-  window.open("https://bakurachat.000webhostapp.com/" , "_self");
+  window.open("/index" , "_self");
 })
 
 document.querySelector('.ham-sigin').addEventListener('click', function(e) {
   e.preventDefault;
-  window.open("https://bakurachat.000webhostapp.com/login.php" , "_self");
+  window.open("https://peer-chat-xbeu.onrender.com" , "_self");
 });
