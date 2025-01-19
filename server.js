@@ -43,6 +43,15 @@ app.get("/index", (req,res) => {
     res.render("index");
 })
 
+app.get("/privacyPolicy", (req,res) => {
+    res.render("privacyPolicy");
+})
+// termsandServices.ejs
+app.get("/termsandServices", (req,res) => {
+    res.render("termsandServices");
+})
+
+
 app.post("/upload",upload.single("file"),async (req,res) => {
     const fileData = {
         path: req.file.path,
