@@ -25,7 +25,20 @@ mongoose.connect(process.env.DATABASE_URL);
 
 app.set("view engine","ejs");
 
-app.get("/", (req,res) => {
+app.get("/", (req,res)=>{
+    res.render("landing");
+})
+
+app.get("/aboutus", (req,res)=>{
+    res.render("aboutus");
+})
+
+// contactus.ejs
+app.get("/contactus", (req,res)=>{
+    res.render("contactus");
+})
+
+app.get("/index", (req,res) => {
     res.render("index");
 })
 

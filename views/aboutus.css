@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the About Us section */
+.about-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #86d5e7;
+}
+
+/* Introduction text */
+.team-intro {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Grid container for team members */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Individual team member card */
+.team-member {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+/* Team member image */
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Team member name */
+.team-member h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Team member role */
+.team-member p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #666;
+}
